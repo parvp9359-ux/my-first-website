@@ -47,12 +47,33 @@
       margin: 10px;
     }
 
+    button:hover {
+      background: yellow;
+      transform: scale(1.1);
+    }
+
     a {
-      display: block;
-      margin-top: 20px;
-      color: yellow;
+      margin: 10px;
+      color: white;
       text-decoration: none;
       font-size: 18px;
+    }
+
+    .navbar {
+      background: black;
+      padding: 15px;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      background: black;
+    }
+
+    input, textarea {
+      padding: 10px;
+      width: 80%;
+      max-width: 300px;
     }
   </style>
 
@@ -60,6 +81,13 @@
 
 <body>
 
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <!-- Heading -->
   <h1>Hello Parv 👋</h1>
 
   <p>Welcome to my professional website 🚀</p>
@@ -76,8 +104,20 @@
     Contact Me
   </button>
 
-  <!-- Link -->
-  <a href="#">More features coming soon...</a>
+  <!-- Contact Form -->
+  <h2>Contact Form</h2>
+
+  <form action="https://formspree.io/f/yourID" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required><br><br>
+    <input type="email" name="email" placeholder="Your Email" required><br><br>
+    <textarea name="message" placeholder="Your Message"></textarea><br><br>
+    <button type="submit">Send</button>
+  </form>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Parv Website</p>
+  </footer>
 
 </body>
 </html>
